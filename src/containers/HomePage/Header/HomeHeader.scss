@@ -1,0 +1,236 @@
+.home-header-container {
+    height: 100px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    // box-shadow: 0px 1px 1px rgb(0 0 0 / 18%);
+    background: rgba(255, 255, 255, 1);
+    z-index: 100;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.18);
+    .home-header-content {
+        width: 1200px;
+        height: 100%;
+        padding: 10px 15px;
+        display: flex;
+
+        .left-content {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            .icon-container {
+                font-size: 1.6rem;
+                margin-right: 1.2rem;
+            }
+            .logo-container {
+                .header-logo {
+                    background: url(../../../assets/images/logo.svg) center center no-repeat;
+                    height: 40px;
+                    width: 160px;
+                }
+            }
+        }
+        .center-content {
+            display: flex;
+            height: 100%;
+            width: 50%;
+            justify-content: space-between;
+            align-items: center;
+            .center-content-item {
+                height: 36px;
+
+                .center-content-item__title {
+                    font-size: 12px;
+                    width: 100%;
+                }
+                .center-content-item__content {
+                    font-size: 10px;
+
+                    width: 100%;
+                }
+            }
+        }
+        .right-content {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .right-content-support{
+                display: flex;
+                align-items: center;
+                .icon{
+                    font-size: 1.6rem;
+                    margin-right: 4px;
+                    color: #45c3d2;
+                }
+                .text{
+                    font-size: 1.4rem;
+                }
+            }
+            
+            .language{
+                margin-left: 32px;
+                display: flex;
+                align-items: center;
+                .split{
+                    width: 2px;
+                    height: 16px;
+                    background-color: #45c3d2;
+                    margin-right: 3px;
+                }
+                .icon-global{
+                    font-size: 1.6rem;
+                    margin-right: 3px;
+                    
+                }
+                .text{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+.home-header-banner {
+    margin-top: 40px;
+    background: url('../../../assets/images/bookingcare-cover-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100vw;
+
+    .search-home {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+        padding: 45px 0;
+        color: #333;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        min-height: 60vh;
+        .title1 {
+            font-size: 2.6rem;
+
+            text-shadow: 1px 1px 1px #333;
+            color: #fff;
+
+            font-weight: 300;
+        }
+        .title2 {
+            color: #fff;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+
+            text-shadow: 1px 1px 1px #333;
+            font-weight: 500;
+            align-items: center;
+        }
+        .search {
+            width: 400px;
+
+            border-radius: 25px;
+            background: #f7d800;
+            color: #fff;
+            outline: none;
+            border: 1px solid transparent;
+            line-height: 50px;
+            height: 50px;
+            padding-left: 50px;
+            padding-right: 25px;
+            position: relative;
+            align-items: center;
+            display: flex;
+            .icon {
+                position: absolute;
+                left: 24px;
+                color: #333;
+            }
+            input {
+                background: transparent;
+                outline: none;
+                border: none;
+                width: 100%;
+                flex: 1;
+
+                padding: 0;
+            }
+        }
+    }
+
+    .options {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+        padding-top: 30px;
+        padding-bottom: 20px;
+        height: 172px;
+        display: flex;
+        justify-content: center;
+        
+        .option-child {
+         
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+            padding: 5px;
+            height: 122px;
+            .icon-child {
+                background-color: #fff;
+                position: relative;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                font-size: 1.6rem;
+                font-weight: bold;
+                
+                color: #45c3d2;
+
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .text-child {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #333;
+                &:hover {
+                    color: #45c3d2;
+                }
+            }
+        }
+    }
+}
+.box-Tippy{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+    background: rgba(255, 255, 255,1);
+    box-shadow: rgba(0, 0, 0,  12%) 0px 2px 12px;
+    align-items: center;
+    min-width: 76px;
+    .item1{
+        padding:8px 4px ;
+        font-size: 1rem;
+        border-bottom: 1px solid #333;
+        cursor: pointer;
+        &:hover {
+            color: #45c3d2;
+        }
+    }
+    .item2{
+        padding:8px 4px ;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+            color: #45c3d2;
+        }
+        
+    }
+}
